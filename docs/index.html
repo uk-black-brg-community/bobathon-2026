@@ -55,32 +55,43 @@
       margin-bottom: 1rem;
     }
 
-    ol li {
-      margin-bottom: 0.5rem;
-    }
-
-    code {
-      background: #f3f3f3;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      padding: 0.1em 0.4em;
-      font-size: 0.9em;
-      font-family: "SFMono-Regular", Consolas, monospace;
-    }
+    ol li { margin-bottom: 0.6rem; }
 
     .cta {
       display: inline-block;
-      margin-top: 1.5rem;
+      margin-top: 1.25rem;
       background: #1a1a1a;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
-      padding: 0.75rem 1.5rem;
+      padding: 0.8rem 1.6rem;
       border-radius: 4px;
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
 
     .cta:hover { background: #333; }
+
+    .cta-secondary {
+      display: inline-block;
+      margin-top: 0.75rem;
+      color: #1a1a1a;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1px;
+    }
+
+    .cta-secondary:hover { border-color: #1a1a1a; }
+
+    .steps {
+      background: #f7f7f7;
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .steps ol { margin-bottom: 0; }
 
     .note {
       margin-top: 2rem;
@@ -89,6 +100,15 @@
       color: #555;
       font-size: 0.9rem;
     }
+
+    .advanced {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .advanced h2 { margin-top: 0; color: #555; }
+    .advanced p { color: #555; font-size: 0.9rem; }
 
     footer {
       margin-top: 3rem;
@@ -108,35 +128,45 @@
     </header>
 
     <p>
-      On <strong>21 October 2026</strong>, IBMers and external guests came together at 20 York Road, London
+      On <strong>21 October 2026</strong>, 66 people came together at 20 York Road, London
       to build with <strong>IBM Bob</strong> — IBM's AI coding assistant — in a single session.
-      No prior coding experience needed.
+      Some built a working prototype in 15 minutes. No coding experience needed.
     </p>
 
     <p>
-      This page is the community showcase. If you built something on the night, submit it below
-      and your project will appear in the gallery.
+      This page is the community showcase. If you built something on the night, share it below —
+      it only takes a couple of minutes.
     </p>
 
-    <h2>How to submit your project</h2>
+    <h2>Share your project</h2>
 
-    <ol>
-      <li>You'll need a free <a href="https://github.com/signup">GitHub account</a>.</li>
-      <li><strong>Fork</strong> the <a href="https://github.com/uk-black-brg-community/bobathon-2026">bobathon-2026 repository</a>.</li>
-      <li>Copy <code>submissions/_template.md</code> to <code>submissions/your-project-name.md</code>.</li>
-      <li>Fill in the fields — title, description, link to your repo, and how you used Bob.</li>
-      <li>Open a <strong>pull request</strong> with the title <code>Add submission: Your Project Name</code>.</li>
-    </ol>
+    <div class="steps">
+      <ol>
+        <li>Click the button below — it opens a short form on GitHub.</li>
+        <li>Fill in your project name, what you built, and how you used Bob.</li>
+        <li>Click <strong>Submit new issue</strong>.</li>
+      </ol>
+    </div>
 
-    <p>That's it. We'll review and merge it, and your project will be part of the record.</p>
+    <p>You'll need a free <a href="https://github.com/signup">GitHub account</a> — it takes about two minutes to create one.</p>
+    <p>Your code stays in your own repository. We only collect a short description and an optional link.</p>
 
-    <a class="cta" href="https://github.com/uk-black-brg-community/bobathon-2026">
-      View the repository →
+    <a class="cta" href="https://github.com/uk-black-brg-community/bobathon-2026/issues/new?template=submit-project.yml">
+      Submit your project →
     </a>
 
     <div class="note">
       <strong>Your code stays yours.</strong> Submitting here does not transfer ownership of your project.
-      We only collect a short description and a link. You keep all rights to your work.
+      You retain all rights to your work.
+    </div>
+
+    <div class="advanced">
+      <h2>For developers — submit via pull request</h2>
+      <p>
+        If you're comfortable with Git, you can also submit by forking the repository,
+        copying <code>submissions/_template.md</code>, and opening a pull request.
+        See <a href="https://github.com/uk-black-brg-community/bobathon-2026/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for the full guide.
+      </p>
     </div>
 
     <footer>

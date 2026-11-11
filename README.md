@@ -30,14 +30,17 @@ Participants keep their code in their own GitHub repositories. This repo holds a
 
 > **Your code stays yours.** Submitting here does not transfer ownership of your project. You retain all rights.
 
-### How to submit your project
+### How to submit your project — easy route
 
-1. Fork this repository
-2. Copy `submissions/_template.md` to `submissions/your-project-name.md`
-3. Fill in the details
-4. Open a pull request
+1. Go to the [Issues tab](../../issues/new?template=submit-project.yml) and click **Submit a Bobathon Project**
+2. Fill in the form — project name, description, link to your work, how you used Bob
+3. Click **Submit new issue**
 
-Full instructions: [CONTRIBUTING.md](CONTRIBUTING.md)
+That's it. No Git knowledge needed. You'll need a free [GitHub account](https://github.com/signup).
+
+### How to submit — developer route (fork & PR)
+
+If you're comfortable with Git: fork this repo, copy `submissions/_template.md` to `submissions/your-project-name.md`, fill it in, and open a pull request. Full instructions: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 

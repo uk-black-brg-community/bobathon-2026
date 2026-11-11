@@ -1,0 +1,78 @@
+name: Submit a Bobathon Project
+description: Share what you built at Bobathon 2026 with the community.
+title: "Project: [Your Project Name]"
+labels: ["submission"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome! 👋
+        Fill in as much as you can — nothing here is mandatory except your project name.
+        Your code stays in your own repository. This form just tells the community what you built.
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project name
+      placeholder: e.g. Diaspora Bites Cookbook
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Your name or team name
+      placeholder: e.g. Michelle Matthew or Team Cookbook
+
+  - type: input
+    id: organisation
+    attributes:
+      label: Organisation
+      description: Your company, university, or institution (optional)
+      placeholder: e.g. IBM, UCL, Accenture
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Bobathon theme
+      description: Which theme did you build on?
+      options:
+        - Champions Wall
+        - Needs Assessment
+        - Cultural Cookbook (Diaspora Bites)
+        - Mentorship Manifesto
+        - Scholarship Finder
+        - BRG Comms Studio
+        - Know Your Roots
+        - Something else
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What did you build?
+      description: 2–4 sentences is plenty. What does it do? Who is it for?
+      placeholder: We built a cookbook app that lets users search for traditional recipes from the African diaspora. IBM Bob helped us write the search logic and design the layout.
+    validations:
+      required: true
+
+  - type: textarea
+    id: bob-usage
+    attributes:
+      label: How did you use IBM Bob?
+      description: One or two sentences — what did Bob help you with?
+      placeholder: Bob wrote most of the code. We described what we wanted and it generated a working prototype in about 20 minutes.
+
+  - type: input
+    id: repo
+    attributes:
+      label: Link to your project (optional)
+      description: GitHub repo, demo site, video, or any link to your work
+      placeholder: https://github.com/your-username/your-project
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **That's it!** Click *Submit new issue* and your project will be part of the Bobathon 2026 record.
+        The BRG team will add a 🏆 label once it's reviewed.
